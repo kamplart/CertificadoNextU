@@ -1,0 +1,33 @@
+body {
+    padding-left: 3em;
+    font-family: Georgia, "Times New Roman",
+    Times, serif;
+    color: darkcyan;
+    background-color: #F0F0F0 }
+ul.navbar {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+h1 {
+    font-family: Helvetica, Geneva, Arial,
+    SunSans-Regular, sans-serif; }
+h2 {
+    font-family: Helvetica, Geneva, Arial,
+    SunSans-Regular, sans-serif;
+    color: #00b3b3;
+}
+h3 {
+    font-family: Helvetica, Geneva, Arial,
+    SunSans-Regular, sans-serif;
+    color: #00c2c2; }
+.logo{
+    height: 80px;
+}
+
+.lnkSel{
+    color: darkorange;
+}
+.lnk{
+    color: #b4b4b4;
+}

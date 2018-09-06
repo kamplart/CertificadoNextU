@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="author" content="Camilo Pérez">
+    <meta name="keywords" content="html,css,xml,javascript">
+    <meta name="description" content="Hoja de vida">
+    <title>Proyecto Final</title>
+    <link rel='stylesheet' href='stylesheets/index.css'>
+</head>
+
+<body>
+
+    <header>
+        <svg title="Logo" class="logo" >
+            <image xlink:href="images/logo.svg" width="180" height="110" ></image>
+        </svg>
+        <h1 title="Título">Hoja de Vida</h1>
+        <p><h2>Nombres: Camilo Arturo</h2></p>
+        <p><h2>Apellidos: Pérez Rodríguez</h2></p>
+        <p><h3>Fecha de Nacimiento: 9 de Agosto de 1985</h3></p>
+        <p><h3>Lugar de Nacimiento: Bogotá</h3></p>
+
+    </header>
+
+
+    <nav>
+        <a href="index.html" class="lnk">Inicio</a> |
+        <a href="educacion.html" class="lnkSel">Educación</a> |
+        <a href="experiencia.html" class="lnk">Experiencia</a>
+    </nav>
+
+    <section>
+        <br/>
+        <h2>Educación</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Año Inicio</th>
+                    <th>Año Fin</th>
+                    <th>Escolaridad</th>
+                    <th>Institución</th>
+                    <th>Titulo</th>
+                    <th>Lugar</th>
+                    <th>Culminó?</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>1990</td>
+                <td>1995</td>
+                <td>Primaria</td>
+                <td>Colegio Santo Domingo de la Juventud</td>
+                <td>-</td>
+                <td>Bogotá</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>1996</td>
+                <td>2001</td>
+                <td>Bachiderato</td>
+                <td>Liceo Psicopedagógico Bolivia</td>
+                <td>Bachiller</td>
+                <td>Bogotá</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>2002</td>
+                <td>2006</td>
+                <td>Tecnologico</td>
+                <td>Corporación Universitaria Minuto de Dios </td>
+                <td>Tecnologo en informatica</td>
+                <td>Bogotá</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>2007</td>
+                <td>2010</td>
+                <td>Profesional</td>
+                <td>Fundación Politécnico Grancolombiano Institución Universitaria</td>
+                <td>Ingeniero de Sistemas</td>
+                <td>Bogotá</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>2010</td>
+                <td>2010</td>
+                <td>Profesional</td>
+                <td>Fundación Politécnico Grancolombiano Institución Universitaria</td>
+                <td>DIPLOMADO EN CIENCIAS DE LA COMPUTACIÓN</td>
+                <td>Bogotá</td>
+                <td>Si</td>
+            </tr>
+        </table>
+
+        <form action="#">
+            <h2>Agregar Estudios</h2>
+
+            <p>
+                <label for="anioInicio">Año Inicio: </label>
+                <br>
+                <select name="anioInicio" required>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="anioFin">Año Fin: </label>
+                <br>
+                <select name="anioFin" required>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option selected value="2018">2018</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="escolaridad" required>Escolaridad</label>
+                <br>
+                <input type="text" name="escolaridad" placeholder="Ej: Profesional" required>
+            </p>
+
+            <p>
+                <label for="institucion" required>Institución</label>
+                <br>
+                <input type="text" name="institucion" placeholder="Ej: Tu universidad" required>
+            </p>
+
+            <p>
+                <label for="titulo" required>Titulo</label>
+                <br>
+                <input type="text" name="titulo" placeholder="Ej: Ingeniero industrial" required>
+            </p>
+
+            <p>
+                <label for="lugar" required>Lugar: </label>
+                <br>
+                <textarea name="lugar" id="" cols="30" rows="3" placeholder="Ej: Bogotá" required></textarea>
+            </p>
+
+
+            <p>
+                <input type="submit" onclick="alert('Proximámente');" value="Enviar">
+            </p>
+        </form>
+
+</section>
+
+<footer>
+    <br/>
+    <hr/>
+    <p>Derechos reservados</p>
+    <p><label>Correo:</label> kamplart@gmail.com</p>
+    <p><label>Télefono:</label> 8757502</p>
+    <p><label>Facebook:</label> kamplart</p>
+</footer>
+</body>
+</html>
