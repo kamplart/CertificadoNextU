@@ -1,3 +1,2 @@
-
-//bitbucket
-https://bitbucket.org/desarrollokamplart/nextu/src/master/cssDisenoWebResponsivo/0cssDisenoWebResponsivo_CamiloArturo_Perez/
+//git
+https://github.com/kamplart/CertificadoNextU/tree/master/0cssDisenoWebResponsivo_CamiloArturo_Perez
