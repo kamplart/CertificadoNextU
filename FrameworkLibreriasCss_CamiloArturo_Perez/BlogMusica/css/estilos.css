@@ -1,3 +1,13 @@
+body {
+    font-family: Georgia, "Times New Roman",
+    Times, serif;
+    color: darkcyan;
+    background-color: #7B262C;
+
+}
+
+
+/*
 * {
     box-sizing: border-box;
 }
@@ -10,9 +20,10 @@
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
-    border: 1px solid black;
-    height: 70px;
+    padding: 4px;
+    border: 2px solid grey;
+    min-height: 70px;
+    //height: 70px;
 }
 
 .col-1 {width: 8.33%;}
@@ -27,11 +38,25 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+*/
 
 
-.contenedor{
+.contenedor, .container{
   width: 70%;
-  margin: 60px auto;
-  border: 3px solid red;
+  margin: 0px auto;
+  border: 3px solid grey;
   padding: 5px;
+    background-color: #FFFFFF !important;
+}
+
+.logo{
+    height: 80px;
+}
+.imgPie{
+    height: 18px;
+    width: 18px;
+}
+
+.listaRedes{
+    //background-color: #DDDDDD;
 }
