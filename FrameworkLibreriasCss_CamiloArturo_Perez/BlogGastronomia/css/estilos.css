@@ -1,0 +1,7 @@
+.trasparente{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.miLabel, h3{
+    color:darkolivegreen;
+}

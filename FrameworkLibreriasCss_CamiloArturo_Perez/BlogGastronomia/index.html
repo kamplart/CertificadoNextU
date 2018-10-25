@@ -6,32 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gastronomia</title>
   <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/foundation-icons.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/foundation-icons.css">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
 
-<div class="row">
-  <div class="column large-4">
-    <div class="callout">
-      <div class=" columns text-center">
+<div class="row  trasparente" >
+
+
+  <div class="column large-4 medium-6 small-12" >
+    <div class="column ">
+
+      <div class=" column text-center "  >
         <h1>Cocinando</h1>
       </div>
-      <div class=" columns text-right">
+
+      <div class=" column text-right" >
         <img src="images/slogan.png" width="100px">
       </div>
+
+    </div>
+  </div>
+
+  <div class="column large-8">
+  </div>
+
+</div>
+
+
+<div class="row trasparente">
+
+
+  <div class="column large-4 medium-6 small-12">
+    <div class="callout">
+
       <div class="large-12 menu">
         <input type="search" placeholder="Buscar" >
         <button type="submit" class="success button postfix" name="search_submit" value="Search">
           <i class="fi-magnifying-glass"></i>
         </button>
-
       </div>
-
-      <hr>
-
-
+      <br>
       <div class="row">
         <div class="column">
           <a href="#" class="expanded hollow success  button">Inicio</a>
@@ -40,58 +57,106 @@
         </div>
       </div>
 
-      <p>Favoritos</p>
+      <h3>Favoritos</h3>
 
       <div class="row small-up-3">
         <div class="column">
-          <img class="thumbnail" src="https://placehold.it/250x200">
+          <img class="thumbnail" title="Ajiaco" src="images/reAjiaco.jpg">
         </div>
         <div class="column">
-          <img class="thumbnail" src="https://placehold.it/250x200">
+          <img class="thumbnail" title="Caldo de costilla" src="images/reCaldoCostilla.jpg">
         </div>
         <div class="column">
-          <img class="thumbnail" src="https://placehold.it/250x200">
+          <img class="thumbnail" title="Crema de champiñones" src="images/reCremaChampinones.jpg">
         </div>
       </div>
 
       <div class="row small-up-3">
         <div class="column">
-          <img class="thumbnail" src="https://placehold.it/250x200">
+          <img class="thumbnail" title="Mondongo" src="images/reMondongo.jpg">
         </div>
         <div class="column">
-          <img class="thumbnail" src="https://placehold.it/250x200">
+          <img class="thumbnail" title="Sancocho de gallina" src="images/reSancochoGallina.jpg">
         </div>
         <div class="column">
-          <img class="thumbnail" src="https://placehold.it/250x200">
+          <img class="thumbnail" title="Cazuela de frijoles" src="images/reCazuelaFrijoles.jpg">
         </div>
       </div>
 
 
-      <p>Historial</p>
+      <h3>Historial</h3>
 
-      <div class="row">
-        <ul class="side-nav">
-          <li><a href="#">Bandeja Paisa</a></li>
-          <li><a href="#">Ajiaco</a></li>
-          <li><a href="#">Frijolada</a></li>
-          <li><a href="#">Pollo con champiñones</a></li>
+      <div class="row small-up-3  ">
+        <ul style="list-style:none;">
+          <li class=" menu"><a href="#">Bandeja Paisa</a></li>
+          <li class=" menu"><a href="#">Ajiaco</a></li>
+          <li class=" menu"><a href="#">Frijolada</a></li>
+          <li class=" menu"><a href="#">Pollo con champiñones</a></li>
         </ul>
       </div>
-
-      <ul class=" inline-list" role="navigation" title="Link List">
-        <li role="menuitem"><a href="#">Link 1</a></li>
-        <li role="menuitem"><a href="#">Link 2</a></li>
-        <li role="menuitem"><a href="#">Link 3</a></li>
-        <li role="menuitem"><a href="#">Link 4</a></li>
-      </ul>
 
 
     </div>
   </div>
-  <div class="column large-8">
-    <div class="callout">Este elemento siempre se mostrará</div>
+
+  <div class="column large-8 medium-6 small-12">
+    <div class="callout">
+        <h3>Bandeja Paisa</h3>
+        <p>24 de Octubre de 2018</p>
+        <div class="column">
+          <img class="thumbnail" title="Mondongo" src="images/reBandejaPaisa.jpg">
+        </div>
+      <p>La bandeja paisa es el plato más representativo de la región, típico de la cocina antioqueña, correspondiente a los actuales territorios de Antioquia, el Viejo Caldas o Eje Cafetero (Caldas, Quindío y Risaralda), parte del norte del Valle del Cauca y el norte del Tolima, Colombia. Es originario del departamento de Antioquia</p>
+      <p>Una de las cacterísticas fundamentales de este plato es su abundancia, tanto en cantidad como en variedad de alimentos, de tal modo que la bandeja paisa completa solo cabe servirla en platos grandes llamados bandejas. </p>
+
+      <label class="miLabel">Escriba un comentario
+        <textarea placeholder="Text Area"></textarea>
+      </label>
+
+      <div class="text-right">
+        <button type="submit" class=" success button " name="search_submit postfix" value="Search">
+          <i class="fi-pencil"></i> Publicar
+        </button>
+      </div>
+
+      <div class="columns">
+        <div class="callout secondary"><img class="thumbnail large-1 medium-1 small-1" src="images/peHombre1.jpg"> Una gran reseta paisa</div>
+        <div class="callout secondary"><img class="thumbnail large-1 medium-1 small-1" src="images/peMujer2.jpg"> Tengo hambre</div>
+        <div class="callout secondary"><img class="thumbnail large-1 medium-1 small-1" src="images/peHombre3.jpg"> Facel de hacer</div>
+      </div>
+
+    </div>
   </div>
 
+  <div class="column large-4 medium-6 small-12"></div>
+
+  <div class="column large-8 medium-6 small-12">
+    <div class="callout">
+      <h3>Cazuela de Mariscos</h3>
+      <p>24 de Octubre de 2018</p>
+      <div class="column">
+        <img class="thumbnail" title="Mondongo" src="images/reCazuelaMariscos.jpg">
+      </div>
+      <p>La cazuela de mariscos es un plato fuerte típico de la Región Caríbe de Colombia (en especial de la Cartagena de Indias, Barranquilla y Santa Marta). Su preparación, así como sus ingredientes suelen variar ligeramente en las diferentes regiones.1​</p>
+      <p>Incluye ingredientes como langosta, langostinos, camarones, pescados, almejas, calamares, leche de coco, un guiso sofrito de verduras (cebolla, zanahoria, pimiento, tomate y especias) y opcionalmente crema de leche, vino blanco y queso parmesano (en caso de gratinar), todo cocinado en agua. </p>
+
+      <label class="miLabel">Escriba un comentario
+        <textarea placeholder="Text Area"></textarea>
+      </label>
+
+      <div class="text-right">
+        <button type="submit" class=" success button " name="search_submit postfix" value="Search">
+          <i class="fi-pencil"></i> Publicar
+        </button>
+      </div>
+
+      <div class="columns">
+        <div class="callout secondary"><img class="thumbnail large-1 medium-1 small-1" src="images/peMujer1.jpg"> Una gran reseta paisa</div>
+        <div class="callout secondary"><img class="thumbnail large-1 medium-1 small-1" src="images/peHombre2.png"> Tengo hambre</div>
+        <div class="callout secondary"><img class="thumbnail large-1 medium-1 small-1" src="images/peMujer3.jpg"> Facel de hacer</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
