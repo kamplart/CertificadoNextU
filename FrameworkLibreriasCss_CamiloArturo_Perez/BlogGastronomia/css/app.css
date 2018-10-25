@@ -5,3 +5,11 @@ body{
     padding: 5px;
     background-color: #FFFFFF !important;
 }
+
+.trasparente{
+    background-color: rgba(0, 179, 179, 0.3);
+}
+
+.miLabel, h3{
+    color:darkolivegreen;
+}
