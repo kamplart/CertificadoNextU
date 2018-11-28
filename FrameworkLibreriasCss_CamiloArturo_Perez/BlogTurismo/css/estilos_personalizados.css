@@ -1,0 +1,16 @@
+.miFondo{
+
+    background-image: url("../images/fondo.jpg");
+    padding: 5px;
+    background-color: #FFFFFF !important;
+}
+
+.imgPie{
+    height: 30px;
+    width: 30px;
+}
+
+
+.parallax-container {
+    height: 80px;
+}

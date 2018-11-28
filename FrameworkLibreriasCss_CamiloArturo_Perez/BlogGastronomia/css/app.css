@@ -1,5 +1,13 @@
 
-body{
+
+.menuFondo{
+    background-image: url("../images/blogMenu.jpg");
+    padding: 5px;
+    background-color: #FFFFFF !important;
+}
+
+
+.miFondo{
 
     background-image: url("../images/body.jpg");
     padding: 5px;

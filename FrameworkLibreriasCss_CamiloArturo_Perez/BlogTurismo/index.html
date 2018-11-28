@@ -10,169 +10,177 @@
     <link rel="stylesheet" href="css/estilos_personalizados.css">
     <title>Blog Turismo</title>
   </head>
-  <body>
+  <body class="">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
 
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/fondo.jpg"></div>
 
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col s12">
-          <h1>Formulario de materializa</h1>
-        </div>
-      </div>
-
-
-        <div class="row">
-          <form>
-            <div class="col s12">
-
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">perm_identity</i>
-                  <input id='nombre' type="text" class="validate">
-                  <label for="nombre">Nombre y apellido</label>
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">vpn_keys</i>
-                  <input id='contresena' type="password" class="validate">
-                  <label for="contresena">Contraseña</label>
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">email</i>
-                  <input id='mail' type="email" class="validate">
-                  <label for="mail" data-success="Correcto" data-error="Debes completar este campo">E-mail</label>
-                </div>
-                </div>
-
-                <div class="row">
-
-                  <div class="input-field col s6">
-                    <select>
-                      <option value="" disabled selected>Choose your option</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
-                    <label>Materialize Select</label>
-                  </div>
-
-                  <div class="input-field col s6">
-                    <select multiple>
-                      <option value="" disabled selected>Choose your option</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
-                    <label>Materialize Multiple Select</label>
-                  </div>
-
-                  <div class="input-field col s6">
-                    <select>
-                      <optgroup label="team 1">
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                      </optgroup>
-                      <optgroup label="team 2">
-                        <option value="3">Option 3</option>
-                        <option value="4">Option 4</option>
-                      </optgroup>
-                    </select>
-                    <label>Optgroups</label>
-                  </div>
-
-                  <div class="input-field col s6 m6">
-                    <select class="icons">
-                      <option value="" disabled selected>Choose your option</option>
-                      <option value="" data-icon="images/sample-1.jpg">example 1</option>
-                      <option value="" data-icon="images/office.jpg">example 2</option>
-                      <option value="" data-icon="images/yuna.jpg">example 3</option>
-                    </select>
-                    <label>Images in select</label>
-                  </div>
-
-                  <div class="input-field col s6">
-
-                  <select class="browser-default">
-                    <option value="" disabled selected>Choose your option</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                  </select>
-                  </div>
-
-                </div>
-
-                <div class="row">
-
-                <div class="input-field col s6">
-                  <p>
-                    <input id='check1' type="checkbox" >
-                    <label for="check1">Automovil</label>
-                  </p>
-                  <p>
-                    <input id='check2' type="checkbox" class="validate" checked="checked">
-                    <label for="check2">Bus</label>
-                  </p>
-                  <p>
-                    <input id='check3' type="checkbox" class="filled-in">
-                    <label for="check3">Avion</label>
-                  </p>
-                </div>
-
-                <div class="input-field col s6">
-                  <div class="switch">
-                    <label>
-                      No
-                      <input type="checkbox">
-                      <span class="lever"></span>
-                      Si
-                    </label>
-                  </div>
-                </div>
-
-                <div class="input-field col s6">
-                  <p>
-                    <input id='masculino' type="radio" name="sexo" value="masculino" class="validate">
-                    <label for="masculino">Masculino</label>
-                  </p>
-                  <p>
-                    <input id='femenino' type="radio" name="sexo" value="femenino" class="validate with-gap">
-                    <label for="femenino">Femenino</label>
-                  </p>
-                </div>
+      <div class="s12 col  barra-superior">
+        <div class="row ">
+          <nav >
+            <div class="nav-wrapper light-blue darken-3">
+              <div class="s4 m3 l2 col " style="width:140px; height:70px; ">
+                <svg title="Logo" class="logo" >
+                  <image xlink:href="images/logo.svg" width="140px" height="100px" ></image>
+                </svg>
               </div>
 
-
-              <div class="row">
-                <div class="file-field input-field col s12">
-                 <div class="btn">
-                   Subir
-                   <input type="file">
-                 </div>
-                  <div class="file-path-wrapper">
-                    <input type="text" class="file-path validate">
-                  </div>
-                </div>
+              <div class="s4 m3 l2 col ">
+                <h5 class="hide-on-small-only">Vive Colombia Viaja por ella</h5>
+                <h5 class="hide-on-large-only">Vive Colombia </h5>
               </div>
 
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">ac_unit</i>
-                  <textarea id='texto'  class="materialize-textarea"></textarea>
-                  <label for="texto" >Texto</label>
-                </div>
-              </div>
+              <div class="s2 m6 l8 col">
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li class="active"><a href="#"><i class="material-icons left">home</i>Inicio</a></li>
+                  <li><a href="#"><i class="material-icons left">map</i>Estuve en..</a></li>
+                  <li><a href="#"><i class="material-icons left">star</i>Mejores Viajes</a></li>
+                  <li><a href="#"><i class="material-icons left">favorite</i>Recomendaciones</a></li>
+                </ul>
+              </div>
             </div>
-          </form>
-        </div>
+          </nav>
 
+          <ul class="sidenav right " id="mobile">
+            <li class="active"><a href="#"><i class="material-icons left">home</i>Inicio</a></li>
+            <li><a href="#"><i class="material-icons left">map</i>Estuve en..</a></li>
+            <li><a href="#"><i class="material-icons left">star</i>Mejores Viajes</a></li>
+            <li><a href="#"><i class="material-icons left">favorite</i>Recomendaciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class=" section grey lighten-3">
+
+      <div class="s12 col transparent darken-1 ">
+        <div class="row">
+          <div class="s3 m2 l1 col collection  light darken-2  hide-on-med-and-down">
+            <a class="collection-item transparent " href="#"><img class="imgPie" src="images/youtube.jpg" alt="LogoYoutube"></a>
+            <a class="collection-item transparent " href="#"><img class="imgPie" src="images/facebook.png" alt="LogoFace"></a>
+            <a class="collection-item transparent" href="#"><img class="imgPie" src="images/whatsapp.png" alt="LogoWahatsapp"></a>
+            <a class="collection-item transparent" href="#"><img class="imgPie" src="images/twitter.png" alt="LogoTwitter"></a>
+            <a class="collection-item transparent" href="#"><img class="imgPie" src="images/google.png" alt="LogoGoogle+"></a>
+            <a class="collection-item transparent" href="#"><img class="imgPie" src="images/instagram.png" alt="LogoInstagram"></a>
+          </div>
+
+          <div class="s12 m10 l11  col light darken-1 ">
+
+            <div class="s12 m6 l4  col light darken-1 ">
+            <img class="materialboxed" width="100%" src="images/turSanAndres1.jpg">
+            <img class="materialboxed" width="100%" src="images/turSanAndres2.jpg">
+            </div>
+
+            <div class="s12 m6 l4  col light darken-1 ">
+              <img class="materialboxed" width="100%" src="images/turIglesia.png">
+            </div>
+
+            <div class="s12 m6 l4  col light darken-1 ">
+              <img class="materialboxed" width="100%" src="images/turSanAndres3.jpg">
+              <img class="materialboxed" width="100%" src="images/turSanAndres4.jpg">
+              <img class="materialboxed" width="100%" src="images/turSanAndres5.jpg">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/fondo.jpg"></div>
+    </div>
+
+
+    <div class="row section grey lighten-3 ">
+
+      <div class="s12 m8 l9 col card white  ">
+
+        <img class="materialboxed" src="images/turAcuario.jpg" height="280px"  hspace="5" vspace="5" style="float: left;" />
+
+        <h5 class="" >El Acuario</h5>
+
+        <div class="chip"> 10 de Noviembre del 2018 <i class="material-icons prefix">date_range</i></div>
+        <div class="chip"> Bogotá <i class="material-icons prefix">gps_fixed</i></div>
+
+        <p>
+          En las bellas Islas del Rosario a tan solo 40 minutos en lancha desde el Muelle de los Pegasos- Muelle Turístico se encuentra este espectacular acuario dentro del mar ; con una belleza natural impresionante y una infraestructura que lo hace uno de los acuarios mas bellos del caribe!
+          Este magnifico archipiélago   situado a 35 kilómetros al sur oeste de Cartagena,consta de 27 islas, algunas tan pequeñas que solo tienen una casa. Estas islas coralinas, fueron declaradas parque nacional y es uno de los mejores lugares del Caribe Colombiano.El acuario está localizado en la Isla de San Martín de Pajares (Islas del Rosario).
+          Pueden admirar tiburones, tortugas, peces y el tour en barco les aportará una vista espectacular de las islas con el fin de tomar fotografías impresionantes.
+        </p>
+        <p>
+          En las bellas Islas del Rosario a tan solo 40 minutos en lancha desde el Muelle de los Pegasos- Muelle Turístico se encuentra este espectacular acuario dentro del mar ; con una belleza natural impresionante y una infraestructura que lo hace uno de los acuarios mas bellos del caribe!
+          Este magnifico archipiélago   situado a 35 kilómetros al sur oeste de Cartagena,consta de 27 islas, algunas tan pequeñas que solo tienen una casa. Estas islas coralinas, fueron declaradas parque nacional y es uno de los mejores lugares del Caribe Colombiano.El acuario está localizado en la Isla de San Martín de Pajares (Islas del Rosario).
+          Pueden admirar tiburones, tortugas, peces y el tour en barco les aportará una vista espectacular de las islas con el fin de tomar fotografías impresionantes.
+        </p>
+
+
+        <img class="materialboxed" src="images/turMuralla.jpg" height="280px"  hspace="5" vspace="5" style="float: left;" />
+
+        <h5 class="" >Ciudad Amurallada</h5>
+
+        <div class="chip"> 10 de Noviembre del 2018 <i class="material-icons prefix">date_range</i></div>
+        <div class="chip"> Bogotá <i class="material-icons prefix">gps_fixed</i></div>
+
+        <p>
+          Cartagena ha sido conocida por muchos como una ciudad que era el blanco de muchos piratas, sobre todo ingleses y franceses, que pretendían saquear la ciudad, de hecho esta es una de las principales razones por las que se construyó el Castillo de San Felipe de Barajas, La Muralla e inclusive se adquirieron estrategias muy crueles para mantener la ciudad protegida. En un tour el puerto, nos comentaron que los leprosos eran aventados a las aguas del mar cercanas al puerto, porque de esta manera llamaban la atención de los tiburones que se comían a los enfermos y así era una muerte segura para los tripulantes de los barcos piratas si es que su barco naufragaba aunque fuera un poco cercano. Muchos de ellos no podían embarcar en la costa porque el agua era muy baja. Se puede considerar que Cartagena es una ciudad que se pudo defender, aunque no hay que olvidar la fuerte presencia española que dotó a los habitantes de muchos conocimientos y armas para ello, ya que ellos fueron quienes construyeron el castillo.
+        </p>
+        <p>
+          Otro de los lugares que recomiendo es el Museo del Oro Zenú, que expone objetos de oro que eran fabricados por la cultura Zenú antes de la conquista española. También puedes visitar el Museo de Arte Moderno, aunque no lo considero como un "must", las diversas iglesias como la de San Pedro de Claver y puedes admirar muchas de las casonas coloniales que conservan su fachada.
+        </p>
+      </div>
+
+
+
+
+
+
+      <div class="s12 m4 l3 col  card white">
+
+          <div class="s12 m12 l12 col  center-align" >
+            <img class="circle  "  width="30px"  src="images/foto.png" alt="">
+            <h5>Perfil del autor</h5>
+          </div>
+          <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).</p>
 
       </div>
+
+
+      <div class="s12 m12 l12 col  card blue lighten-4">
+        <p>Deja tu comentario
+        <div class="input-field col s12 m6 l6">
+          <i class="material-icons prefix">perm_identity</i>
+          <input id='nombre' type="text" class="validate">
+          <label for="nombre">Nombre y apellido</label>
+        </div>
+        <div class="input-field col s12 m6 l6">
+          <h5 class="material-icons prefix">email</h5>
+          <input id='mail' type="email" class="validate">
+          <label for="mail" data-success="Correcto" data-error="Debes completar este campo">E-mail</label>
+        </div>
+
+        <div class="input-field col s12 m6 l6">
+          <i class="material-icons prefix">mode_comment</i>
+          <input id='comentario' type="text" class="validate">
+          <label for="comentario">Comentario</label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/fondo.jpg"></div>
+    </div>
 
     <script>
        M.AutoInit();
