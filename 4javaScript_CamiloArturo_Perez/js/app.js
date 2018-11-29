@@ -19,7 +19,7 @@ class Calculadora {
 
     adicionarPropiedades(){
 
-        var tipo = true ? "hidden" : "text";
+        var tipo = false ? "hidden" : "text";
 
         var input = document.createElement("input");
         input.type = tipo;
@@ -33,6 +33,12 @@ class Calculadora {
         input2.id = "displayAnterior";
         input2.value = "NE";
         document.getElementById('calculadoraFondo').append(input2);
+
+
+        var notas = document.getElementsByClassName( "nota-input" );
+        for (var i=0; i < notas.length; i++) {
+            notas[i].id='mi_nota';
+        }
     }
 
     eventoClic (){
@@ -70,15 +76,21 @@ class Calculadora {
             document.getElementById("display").innerHTML = '0';
             document.getElementById("displayAnterior").value = 'NE';
             document.getElementById("operSeleccionado").value = '';
+        }else if(tecla == 'sign' && display!='0'){
+            var verificacion = display.indexOf("-");
+            document.getElementById("display").innerHTML = verificacion=='-1' ? ('-'+display) : display.replace("-", "");
         }else if(numeros.indexOf(tecla) != -1){
-            document.getElementById("display").innerHTML = display=='0' ? tecla : display+tecla;
+            document.getElementById("display").innerHTML = display=='0' || document.getElementById("operSeleccionado").value=='igual' ? tecla : display+tecla;
+            if(document.getElementById("operSeleccionado").value=='igual' )
+                document.getElementById("operSeleccionado").value = '';
+
         }else if(operadores.indexOf(tecla) != -1){
 
             var resultado = Calculadora.operar(document.getElementById("operSeleccionado").value, document.getElementById("displayAnterior").value, display)
 
             document.getElementById("display").innerHTML = tecla == 'igual' ? resultado : '0';
             document.getElementById("displayAnterior").value = tecla == 'igual' ? 'NE' :resultado;
-            document.getElementById("operSeleccionado").value = tecla == 'igual' ? '' : tecla;
+            document.getElementById("operSeleccionado").value = tecla;
 
 
         }
@@ -105,8 +117,11 @@ class Calculadora {
                 break;
             default:
                 resultado = valorActual;
+                break;
         }
-        console.log(oper+'  .... ' +valorAnterior +' '+valorActual+ ' === '+resultado);
+
+        document.getElementById("mi_nota").value = valorAnterior +' '+oper+' '+valorActual+ ' === '+resultado;
+
         return resultado;
     }
 
