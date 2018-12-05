@@ -2,24 +2,22 @@
 
 class Calculadora {
     constructor ( conf ){
-       /* this.x = conf.x;
-        this.y = conf.y;
 
-        console.log(conf);
-
-        */
+        var usuario = "Diseñado por "+ conf.nombre + ' ' + conf.apellido;
+        console.log(usuario);
 
         this.adicionarPropiedades( )  ;
         this.eventoClic( )  ;
 
-
-
+        setTimeout(function() {
+            document.getElementById("mi_nota").value =usuario;
+        }, 1000);
 
     }
 
     adicionarPropiedades(){
 
-        var tipo = false ? "hidden" : "text";
+        var tipo = true ? "hidden" : "text";
 
         var input = document.createElement("input");
         input.type = tipo;
@@ -78,9 +76,18 @@ class Calculadora {
             document.getElementById("operSeleccionado").value = '';
         }else if(tecla == 'sign' && display!='0'){
             var verificacion = display.indexOf("-");
-            document.getElementById("display").innerHTML = verificacion=='-1' ? ('-'+display) : display.replace("-", "");
+            document.getElementById("display").innerHTML = verificacion=='-1' && display.length <9 ? ('-'+display) : display.replace("-", "");
+        }else if(tecla == 'punto' ){
+            var verificacion = display.indexOf(".");
+            document.getElementById("display").innerHTML = verificacion=='-1' && display.length <9 ? (display+'.') : display;
+        }else if(tecla == 'raiz'){
+            var verificacion = display.indexOf("-");
+            var raiz = verificacion=='-1' ? Math.sqrt(display) : 0;
+            document.getElementById("mi_nota").value = "raiz( "+display+" ) = "+ raiz;
+            document.getElementById("display").innerHTML = raiz.toString().slice(0, 10);
+            document.getElementById("operSeleccionado").value = '';
         }else if(numeros.indexOf(tecla) != -1){
-            document.getElementById("display").innerHTML = display=='0' || document.getElementById("operSeleccionado").value=='igual' ? tecla : display+tecla;
+            document.getElementById("display").innerHTML = display=='0' || document.getElementById("operSeleccionado").value=='igual' ? tecla : (display.length <9 ? display+tecla : display);
             if(document.getElementById("operSeleccionado").value=='igual' )
                 document.getElementById("operSeleccionado").value = '';
 
@@ -122,7 +129,9 @@ class Calculadora {
 
         document.getElementById("mi_nota").value = valorAnterior +' '+oper+' '+valorActual+ ' === '+resultado;
 
-        return resultado;
+        var final = resultado.toString().slice(0, 10);
+
+        return final;
     }
 
 
@@ -130,6 +139,4 @@ class Calculadora {
 
 
 
-const p1 = new Calculadora ( {'x':2, 'y':3} );
-
-//console . log (Calculadora .distancia ( p1 , p2 ) ) ;
+const p1 = new Calculadora ( {'nombre':'Camilo', 'apellido':'Perez'} );
